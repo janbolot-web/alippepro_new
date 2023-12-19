@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.edit {
+  margin-top: 40px;
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
+    box-shadow: $boxShadow;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border: 1px solid tomato;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: tomato;
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &__name {
+  }
+  &__delete {
+  }
+}

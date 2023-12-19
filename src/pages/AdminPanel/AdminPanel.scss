@@ -1,0 +1,109 @@
+.admin {
+  padding-top: 40px;
+  color: #fff;
+  &__container {
+  }
+  &__title {
+    color: rgb(1, 199, 176);
+    margin-bottom: 30px;
+    span {
+    }
+  }
+  &__block {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #00000024;
+    &-title {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #0099f8;
+    }
+  }
+  &__courses {
+    &-list {
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    &-delete {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      padding: 5px;
+      border: 1px solid tomato;
+    }
+    &-icons {
+      display: flex;
+      gap: 40px;
+      span {
+        cursor: pointer;
+      }
+    }
+    &-add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-edit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__header {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    color: rgb(0, 255, 64);
+    &-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 30%;
+    }
+  }
+  &__left {
+    width: 80%;
+    display: flex;
+    p {
+      width: 34%;
+      border-right: 1px solid silver;
+      margin-right: 20px;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      display: flex;
+      align-items: center;
+      background: #0099f8;
+      font-size: 16px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}

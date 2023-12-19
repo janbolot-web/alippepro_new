@@ -1,0 +1,111 @@
+@import "../../variables";
+
+.buy {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &__container {
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: $mainColorLight;
+    max-width: 600px;
+  }
+  &__header {
+    display: flex;
+    line-height: 1;
+    padding-bottom: 10px;
+    h2 {
+      color: $mainColorLight;
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  &__info {
+  }
+  &__price {
+    margin-bottom: 10px;
+    span {
+      margin-left: 5px;
+      color: $mainColorLight;
+    }
+  }
+  &__lessons {
+    display: flex;
+    align-items: center;
+    ol {
+      margin-left: 5px;
+    }
+  }
+  &__btn {
+    &-decr {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 40px;
+      text-align: center;
+    }
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+    &-social {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      background-color: rgb(0, 200, 0);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+  .insta {
+    background-color: rgb(229, 3, 180);
+  }
+  .telegram {
+    background-color: rgb(0, 157, 255);
+  }
+  .buy__methods {
+    margin-top: 40px;
+    gap: 30px;
+    &-title {
+      margin-bottom: 10px;
+    }
+    &-descr {
+      color: rgb(255, 242, 0);
+    }
+  }
+  .buy__method {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid silver;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &-img {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  .active {
+    background-color: rgb(0, 166, 255);
+  }
+}

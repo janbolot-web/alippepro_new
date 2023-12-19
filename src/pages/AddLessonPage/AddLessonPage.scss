@@ -1,0 +1,107 @@
+.lesson {
+  margin-top: 30px;
+  color: #06283d;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__create-block {
+    width: 40%;
+  }
+  &__preview-block {
+    width: 50%;
+  }
+  input {
+    width: 100%;
+    font-family: Manrope;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #0099f8;
+    border: 1px solid #0099f8;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: #0099f8;
+      opacity: 0.4;
+    }
+  }
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #0099f8;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 20px;
+    color: #0099f8;
+    font-weight: 400;
+    outline: none;
+    font-family: Manrope;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: #0099f8;
+      opacity: 0.4;
+    }
+  }
+  &__create {
+    &-block {
+      background-color: #fff;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    &-btn {
+      display: inline-block;
+      background-color: rgb(15, 222, 0);
+      color: #fff;
+      font-weight: 500;
+      padding: 10px 25px;
+      border-radius: 10px;
+    }
+  }
+  &__name {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 350px;
+    font-size: 16px;
+    &::placeholder {
+      color: silver;
+      font-weight: 400;
+    }
+  }
+  &__video-form {
+    padding-top: 40px;
+  }
+  &__forms {
+    position: relative;
+    span {
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+  &__btn {
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid #0099f8;
+      outline: none;
+      border-radius: 10px;
+      background-color: transparent;
+      padding: 10px 20px;
+      color: #0099f8;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Manrope;
+      cursor: pointer;
+    }
+  }
+}

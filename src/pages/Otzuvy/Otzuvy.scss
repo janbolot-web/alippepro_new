@@ -1,0 +1,11 @@
+.otzuvy{
+    &__block{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        iframe{
+            margin-bottom: 40px;
+        }
+    }
+}

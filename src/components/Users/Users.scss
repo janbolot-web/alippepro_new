@@ -1,0 +1,124 @@
+.users {
+  color: #fff;
+  margin-top: 40px;
+  &__container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #00000024;
+    padding: 30px;
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #0099f8;
+  }
+  &__header {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    color: rgb(0, 255, 64);
+    &-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 28%;
+    }
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    &-name {
+      border-right: 1px solid silver;
+      width: 32.5%;
+      margin-right: 25px;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    width: 20%;
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &-active {
+    color: orange;
+  }
+}
+
+.modal {
+  margin-top: 50px;
+  &__container {
+    position: relative;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    input {
+      width: 50%;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    &__searchBtn {
+      cursor: pointer;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  &__list {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  &__searchBtn {
+    cursor: pointer;
+  }
+  &__lockBtn {
+    background-color: #0099f8;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__banBtn{
+    background-color: #fd1f1e;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
