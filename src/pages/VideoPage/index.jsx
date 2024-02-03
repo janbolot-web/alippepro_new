@@ -70,23 +70,23 @@ const VideoPage = () => {
             <p style={{backgroundColor:'red'}}>Урматтуу мугалимдер, сабактар аманат☝️ <br/>
 Сиз алып жаткан билим менен методикалар окуучуларды гана окутканга уруксат берилет. Методика автордук укукка ээ.</p>
             <div className="video__player">
-              {/* WISTA */}
-              {/* {lesson ?
-                <span className={`wistia_embed wistia_async_${lesson.videoUrl} popover=true popoverAnimateThumbnail=true`} style={{ display: 'inline-block', width: '100%', position: 'relative', height: '100%' }}>&nbsp;</span> : <>
+             
+             
+              {/* {lesson ? <iframe width="100%" height="100%" src={`https://rutube.ru/play/embed/${lesson?.videoUrl}`} frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                : <>
                   <div className="video__not-video "><p>Выберите видеоурок справа</p><span><FaHandPointRight size={34} /></span></div>
                   <div className="video__not-video-mobile "><p>Выберите видеоурок внизу</p><span><FaHandPointRight size={34} /></span></div>
-                </>} */}
-              {/* WISTA */}
-             
-              {lesson ? <iframe width="100%" height="100%" src={`https://rutube.ru/play/embed/${lesson?.videoUrl}`} frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </>
+              } */}
+               {lesson ? <iframe width="100%" height="100%" src={lesson?.youtubeUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 : <>
                   <div className="video__not-video "><p>Выберите видеоурок справа</p><span><FaHandPointRight size={34} /></span></div>
                   <div className="video__not-video-mobile "><p>Выберите видеоурок внизу</p><span><FaHandPointRight size={34} /></span></div>
                 </>
               }
+              
 
-              {/* {!lesson && lessons && <span className={`wistia_embed wistia_async_${lessons?.modules[0]?.lessons[0].videoUrl} popover=true popoverAnimateThumbnail=true`} style={{ display: 'inline-block', width: '100%', position: 'relative', height: '100%' }}>&nbsp;</span>} */}
-            </div>
+              </div>
           <div style={{display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', }}> <p >Бул курсту биздин тиркемеден көрүү учун бул шилтемени басыныз</p> <a href="https://play.google.com/store/apps/details?id=com.alippe.alippepro_v1&hl=ru" style={{marginTop:10,padding:10,borderRadius:10, textAlign:'center',display:'block', backgroundColor:'green',width:200}}>Тиркемени көчүрүү</a></div>
           
             {lesson?.pdfBook && <div className="dwn">
@@ -97,10 +97,7 @@ const VideoPage = () => {
               <h3>Мазмуну</h3>
               <p>{lesson ? lesson.description : lessons?.modules[0]?.lessons[0]?.description}</p>
             </div>
-            {/* <div className="video__tests">
-              <h3>Тест</h3>
-              {lesson?.testUrl && <iframe src={`https://docs.google.com/forms/d/e/${lesson?.testUrl}/viewform?embedded=true`} width="100%" height="1500px" frameBorder="0" marginHeight="0" marginWidth="0">Загрузка…</iframe>}
-            </div> */}
+           
           </div>
           <div className="video__sidebar">
             <div className="video__sidebar-title">{lessons?.title}</div>
