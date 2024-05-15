@@ -61,7 +61,7 @@ const AdminPanel = () => {
                     </span>
                     <span className='admin__courses-edit'>
                       <Link to={`/edit/${course.id}`}>
-                        <AiOutlineEdit size={28} color='green' />
+                        <AiOutlineEdit size={28} color='white' />
                       </Link>
                     </span>
                     <span className='admin__courses-delete' onClick={() => removeCourse(course.id, course.title)}>

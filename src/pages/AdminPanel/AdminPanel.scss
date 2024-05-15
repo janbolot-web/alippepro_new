@@ -2,6 +2,9 @@
   padding-top: 40px;
   color: #fff;
   &__container {
+    @media (max-width: 431px) {
+      max-width: 420px;
+    }
   }
   &__title {
     color: rgb(1, 199, 176);
@@ -19,6 +22,10 @@
       margin-bottom: 30px;
       color: #0099f8;
     }
+
+    @media (max-width: 431px) {
+      padding: 10px;
+    }
   }
   &__courses {
     &-list {
@@ -34,6 +41,11 @@
       padding: 20px;
       border-radius: 10px;
       font-size: 16px;
+
+      @media (max-width: 431px) {
+        padding: 5px;
+        display: block;
+      }
     }
 
     &-delete {
@@ -49,6 +61,9 @@
       gap: 40px;
       span {
         cursor: pointer;
+      }
+      @media (max-width: 431px) {
+        justify-content: space-between;
       }
     }
     &-add {
@@ -80,10 +95,24 @@
   &__left {
     width: 80%;
     display: flex;
+
     p {
       width: 34%;
       border-right: 1px solid silver;
       margin-right: 20px;
+      @media (max-width: 431px) {
+        width: 100%;
+        border: none;
+        margin-bottom: 10px;
+      }
+    }
+    span {
+      @media (max-width: 431px) {
+        display: none;
+      }
+    }
+    @media (max-width: 431px) {
+      display: block;
     }
   }
   &__btn {

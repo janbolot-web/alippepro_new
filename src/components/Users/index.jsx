@@ -1,7 +1,12 @@
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteUser, fetchUserById, fetchUsers, searchUser } from "../../store/slices/auth";
+import {
+  deleteUser,
+  fetchUserById,
+  fetchUsers,
+  searchUser,
+} from "../../store/slices/auth";
 import {
   AiOutlineDelete,
   AiOutlineEdit,
@@ -44,8 +49,10 @@ const Users = () => {
   return (
     <div className="users">
       <div className="users__container">
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h3 className="users__title">Список пользовательей</h3>
+        <div className="users__header-block">
+          <h3 className="users__title"  onClick={() => {
+                console.log(users);
+              }}>Список пользовательей</h3>
           <div style={{ display: "flex" }}>
             <input
               type="text"
@@ -61,7 +68,7 @@ const Users = () => {
               }}
             />
             <div
-              onClick={()=>dispatch(searchUser(searchValue))}
+              onClick={() => dispatch(searchUser(searchValue))}
               style={{
                 width: 30,
                 height: 30,
@@ -79,8 +86,14 @@ const Users = () => {
         </div>
         <div className="users__block">
           <ul className="users__header">
-            <li className="users__header-name">Имя</li>
+            <li
+              className="users__header-name"
+             
+            >
+              Имя
+            </li>
             <li className="users__header-name">Почта</li>
+            <li className="users__header-name">Номер телефона</li>
             <li className="users__header-name">Дата регистрации</li>
           </ul>
           <ul className="users__list">
@@ -102,6 +115,13 @@ const Users = () => {
                     >
                       {user.email}
                     </p>
+                    <p
+                      className={`users__item-name ${
+                        data.id === user._id && "users-active"
+                      }`}
+                    >
+                      {user.phoneNumber}
+                    </p>
                     <span
                       className={`users__item-date ${
                         data.id === user._id && "users-active"
@@ -116,7 +136,10 @@ const Users = () => {
                       onClick={() => showModalHandle({ id: user._id })}
                     >
                       {/* <Link to={`/createLesson/${course.id}`}> */}
-                      <AiOutlinePlus color="#fff" size={24} />
+                      <div className="admin__btn-user">
+                        <AiOutlinePlus color="#fff" size={24} />
+                        Добавить модуль
+                      </div>
                       {/* </Link> */}
                     </span>
                     <span

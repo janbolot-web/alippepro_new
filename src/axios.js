@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://evrika-backend.vercel.app/api",
+  baseURL: "https://fierce-crow-jumper.cyclic.app/api",
 });
 
 instance.interceptors.request.use((config) => {

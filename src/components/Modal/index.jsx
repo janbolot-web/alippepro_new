@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import React, { useState } from 'react'
 import { createCourse } from '../../store/slices/course'
 
 import './Modal.scss'

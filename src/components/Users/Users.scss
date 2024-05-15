@@ -6,6 +6,9 @@
     border-radius: 20px;
     background-color: #00000024;
     padding: 30px;
+    @media (max-width: 431px) {
+      padding: 20px;
+    }
   }
   &__title {
     font-size: 22px;
@@ -20,11 +23,22 @@
     font-size: 16px;
     padding: 20px;
     color: rgb(0, 255, 64);
+
     &-name {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 28%;
+      @media (max-width: 431px) {
+        display: block;
+      }
+    }
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 431px) {
+        display: block;
+      }
     }
   }
   &__list {
@@ -38,16 +52,29 @@
     padding: 20px;
     border-radius: 10px;
     font-size: 16px;
+    @media (max-width: 431px) {
+      display: block;
+    }
     &-name {
       border-right: 1px solid silver;
       width: 32.5%;
       margin-right: 25px;
+      @media (max-width: 431px) {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid silver;
+        margin-bottom: 10px;
+      }
     }
   }
   &__left {
     display: flex;
     align-items: center;
     width: 80%;
+    @media (max-width: 431px) {
+      width: 100%;
+      display: block;
+    }
   }
   &__right {
     display: flex;
@@ -57,6 +84,11 @@
     width: 20%;
     span {
       cursor: pointer;
+    }
+    @media (max-width: 431px) {
+      width: 100%;
+      margin-top: 20px;
+      justify-content: space-between;
     }
   }
 
@@ -113,7 +145,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  &__banBtn{
+  &__banBtn {
     background-color: #fd1f1e;
     color: #fff;
     font-size: 16px;
@@ -121,4 +153,19 @@
     border-radius: 4px;
     cursor: pointer;
   }
+}
+
+.admin__btn-user {
+  display: flex;
+  align-items: center;
+  background: #0099f8;
+  font-size: 16px;
+  padding: 10px 10px ;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+ 
 }
